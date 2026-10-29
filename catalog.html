@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Каталог ИБП — Ровный ток (демо-витрина)</title>
+    <meta name="description" content="Каталог вымышленного магазина ИБП: защита на входе, автономия, ИБП двойного преобразования, мониторинг и сервис. Подбор ИБП за минуту." />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="./assets/catalog-DmvgmXSI.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/shop-MAE_9n4q.js">
+    <link rel="modulepreload" crossorigin href="./assets/products-DLqK9CcN.js">
+    <link rel="stylesheet" crossorigin href="./assets/shop-B1EUiiUT.css">
+    <link rel="stylesheet" crossorigin href="./assets/catalog-ChwBBW8i.css">
+  </head>
+  <body class="catalog-page">
+    <header class="shopbar">
+      <a class="shopbar__brand" href="./"><span class="shopbar__mark" aria-hidden="true"></span>Ровный ток</a>
+      <nav class="shopbar__nav" aria-label="Магазин">
+        <a class="shopbar__link shopbar__link--always" href="./"><span class="wide-only">Путь тока в </span>3D</a>
+        <a class="shopbar__cta" href="#podbor">Подобрать ИБП</a>
+      </nav>
+    </header>
+
+    <main class="catalog">
+      <h1 class="catalog__title">Каталог ИБП</h1>
+      <p class="catalog__lede">Разделы идут в том же порядке, в каком ток проходит через источник бесперебойного питания: от входа до выхода.</p>
+
+      <section class="picker" id="podbor" aria-labelledby="picker-title">
+        <h2 class="picker__title" id="picker-title">Подбор за минуту</h2>
+        <form class="picker__form">
+          <fieldset class="picker__group">
+            <legend>Что защищаем?</legend>
+            <label><input type="radio" name="load" value="pc" checked /><span>Компьютер и роутер</span></label>
+            <label><input type="radio" name="load" value="boiler" /><span>Котёл и насосы</span></label>
+            <label><input type="radio" name="load" value="server" /><span>Серверная стойка</span></label>
+            <label><input type="radio" name="load" value="office" /><span>Офис целиком</span></label>
+          </fieldset>
+          <fieldset class="picker__group">
+            <legend>Сколько работать без сети?</legend>
+            <label><input type="radio" name="time" value="short" checked /><span>5–10 минут</span></label>
+            <label><input type="radio" name="time" value="hour" /><span>До часа</span></label>
+            <label><input type="radio" name="time" value="hours" /><span>Несколько часов</span></label>
+          </fieldset>
+        </form>
+        <div class="picker__result" aria-live="polite"></div>
+      </section>
+
+      <nav class="filters" aria-label="Разделы каталога"></nav>
+      <div class="sections"></div>
+    </main>
+
+    <footer class="catalog__foot">© 2026 · Демо-витрина для портфолио: магазин «Ровный ток» и товары вымышлены, цены условные.</footer>
+
+  </body>
+</html>
